@@ -1,0 +1,11 @@
+function formatPlayCount(playCount) {
+  var count = playCount + ''
+  var countLength = count.length
+  if (countLength < 5) return count
+  if (countLength < 9) return (count / 10000).toFixed(1) + '万'
+  if (countLength >= 9) return (count / 100000000).toFixed(1) + '亿'
+}
+
+module.exports = {
+  formatPlayCount: formatPlayCount
+}

@@ -1,0 +1,58 @@
+/* components/video-item/video-item.wxss */
+.item {
+  margin-bottom: 30rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.item .cover {
+  position: relative;
+  width: 100%;
+}
+
+.item .cover-img {
+  width: 100%;
+  border-radius: 14rpx;
+}
+
+
+
+.item .cover .details {
+  position: absolute;
+  z-index: 9;
+  bottom: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  font-size: 28rpx;
+}
+
+.item .details .play-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .details .play-icon {
+  margin-right: 4rpx;
+  padding-left: 14rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.item .details .play-time {
+  padding-right: 14rpx;
+}
+
+.item .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  font-size: 28rpx;
+}

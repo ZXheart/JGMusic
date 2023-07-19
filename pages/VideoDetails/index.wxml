@@ -1,0 +1,21 @@
+<wxs src="/utils/formatPlayCount.wxs" module="formatPC" />
+
+
+<view class="video-details">
+  <video class="video-player" src="{{videoURL}}" autoplay show-mute-btn />
+  <view class="video-info">
+    <view class="info-name">{{videoInfo.name}}</view>
+    <view class="info-artistName">{{videoInfo.artistName}} - </view>
+    <view class="info-count-publication">
+      <text class="info-count">{{formatPC.formatPlayCount(videoInfo.playCount)}}次播放 - </text>
+      <text class="info-publication">{{videoInfo.publishTime}}</text>
+    </view>
+    <view class="wrap" wx:if="{{videoInfo.desc}}">
+      <view class="{{showMoreDesc ?'':'info-description'}} desc" >
+        <view class="spread-btn" bind:tap="showMore">{{showMoreDesc ? '收起':'展开'}}</view>
+        {{videoInfo.desc}}
+      </view>
+    </view>
+
+  </view>
+</view>

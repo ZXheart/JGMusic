@@ -1,0 +1,17 @@
+<wxs src="/utils/formatPlayCount.wxs" module="formatPC" />
+<wxs src="/utils/formatDuration.wxs" module="formatDR" />
+
+<view class="item">
+  <view class="cover">
+    <image class="cover-img" src="{{item.cover}}" mode="widthFix" />
+    <view class="details">
+      <view class="play-details">
+        <image class="play-icon" src="../../assets/images/icons/play_icon.png" mode="widthFix" />
+        <view class="play-count">{{formatPC.formatPlayCount(item.playCount)}}</view>
+      </view>
+      <view class="play-time">{{formatDR.formatDuration(item.mv.videos[0].duration)}}</view>
+    </view>
+  </view>
+
+  <view class="name">{{item.name}} - {{item.artistName}}</view>
+</view>

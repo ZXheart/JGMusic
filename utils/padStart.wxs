@@ -1,0 +1,14 @@
+function padStart(str, padLength, padStr) {// 2 3 'c' | 4
+  if (!padStr) padStr = '0'
+  if (!padLength) padLength = 2
+  var str = '' + str
+  var newStr = str
+  for (i = 0; i < padLength; i++) {
+    if (newStr.length === padLength) break
+    newStr = padStr + newStr
+  }
+  return newStr
+}
+module.exports = {
+  padStart: padStart
+}

@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/Music/index",
+    "pages/Video/index",
+    "pages/VideoDetails/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Music/index",
+        "text": "Music",
+        "iconPath": "/assets/images/tabbar/music_normal.png",
+        "selectedIconPath": "/assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/Video/index",
+        "text": "Video",
+        "iconPath": "/assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "/assets/images/tabbar/video_active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "JGMusic",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

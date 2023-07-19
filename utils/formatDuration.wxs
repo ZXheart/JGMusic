@@ -1,0 +1,15 @@
+var pad = require('./padStart.wxs')
+function formatDuration(duration) {
+  var duration = +duration
+  var S = duration / 1000
+  if (S < 60) return '00' + ':' + S
+  // as duration is 66; VS: virtual second
+  var VS = 0
+  var VS = S % 60  //VS: 6
+  var M = (S - VS) / 60 //M: 1
+  return pad.padStart(M) + ':' + pad.padStart(VS)
+}
+
+module.exports = {
+  formatDuration: formatDuration
+}

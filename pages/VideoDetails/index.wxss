@@ -1,0 +1,54 @@
+.video-details {
+  font-size: 28rpx;
+}
+
+.video-player {
+  width: 100%;
+}
+
+.video-info {
+  margin: 20rpx 0 30rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.video-info .info-name {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Wether `show more` or not>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.video-info .wrap {
+  display: flex;
+}
+
+.video-info .info-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-info .desc .spread-btn {
+  float: right;
+  clear: both;
+  padding: 4rpx;
+  text-align: center;
+  height: 24rpx;
+  line-height: 24rpx;
+  color: #ddd;
+  background-color: #aaa;
+  border-radius: 4rpx;
+}
+
+.video-info .desc::before {
+  display: block;
+  content: '';
+  margin-bottom: -28rpx;
+  width: 0;
+  height: 100%;
+  background-color: #f00;
+  float: right;
+}
