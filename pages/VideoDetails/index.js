@@ -16,7 +16,6 @@ Page({
 
   async getVideoURL() {
     const res = await fetchVideoURL(this.data.itemid)
-    console.log(res)
     this.setData({ videoURL: res.data.data.url })
   },
   async getVideoInfo() {
@@ -25,7 +24,7 @@ Page({
   },
   async getRelatedVideos() {
     const res = await fetchRelatedVideos(this.data.itemid)
-    console.log(res)
+    // here no response data 
     // this.setData({ videoInfo: res.data.data })
   },
   showMore() {

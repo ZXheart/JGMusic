@@ -1,0 +1,23 @@
+.hot-item {
+  display: inline-block;
+  width: 100%;
+}
+
+.hot-item .image {
+  position: relative;
+}
+
+.hot-item .pic {
+  width: 100%;
+  border-radius: 12rpx;
+  background-size: cover;
+}
+
+.hot-item .description {
+  font-size: 22rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

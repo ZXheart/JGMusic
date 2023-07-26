@@ -1,0 +1,6 @@
+<view class="hot-item">
+  <view class="image">
+    <image class="pic" src="{{item.coverImgUrl}}" mode="widthFix" />
+  </view>
+  <view class="description">{{item.name}}</view>
+</view>

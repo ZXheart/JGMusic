@@ -1,0 +1,5 @@
+<view class="recommend-more">
+  <block wx:for="{{recommend}}" wx:key="id">
+    <recommend-item item="{{item}}" />
+  </block>
+</view>

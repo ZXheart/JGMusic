@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/Music/index",
+    "pages/MusicSearch/index",
     "pages/Video/index",
-    "pages/VideoDetails/index"
+    "pages/VideoDetails/index",
+    "pages/RecommendedMore/index"
   ],
   "tabBar": {
     "list": [
@@ -26,6 +28,5 @@
     "navigationBarTitleText": "JGMusic",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

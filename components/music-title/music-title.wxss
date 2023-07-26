@@ -1,0 +1,23 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.title-text {
+  font-weight: 700;
+  font-size: 40rpx;
+}
+
+.more {
+  position: relative;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.right-icon {
+  position: relative;
+  top: 4rpx;
+}

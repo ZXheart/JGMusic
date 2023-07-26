@@ -1,2 +1,36 @@
-<!--pages/Music/index.wxml-->
-<text>pages/Music/index.wxml</text>
+<view class="music-home">
+  <!-- A. search input -->
+  <van-search class="search" shape="round" placeholder="Please enter keywords" bind:focus="onSearchTapped" />
+  <!-- B. swipe banner -->
+  <view class="banner">
+    <swiper class="swiper" autoplay circular easing-function="linear" indicator-dots indicator-color="#ccc" indicator-active-color="#fff">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <image class="swiper-img" src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- C. Recommended title & content list -->
+  <view class="recommend">
+    <!-- C_ 1. title -->
+    <music-title title="Recommend" bind:moreTapped="recommendMore" />
+    <!-- C_ 2. content list -->
+    <view class="recommend-list">
+      <block wx:for="{{partialRecommned}}" wx:key="id">
+        <recommend-item item="{{item}}" />
+      </block>
+    </view>
+  </view>
+  <!-- D. Hot playlist title & content -->
+  <!-- D_ 1. title -->
+  <music-title title="Hot" bind:moreTapped="hotMore" />
+  <!-- D_ 2. content -->
+  <scroll-view class="hot-playlist" scroll-x enable-flex>
+    <block wx:for="{{partialPlaylist}}" wx:key="id">
+      <view class="hot-item">
+        <hot-playlist item="{{item}}" />
+      </view>
+    </block>
+  </scroll-view>
+</view>

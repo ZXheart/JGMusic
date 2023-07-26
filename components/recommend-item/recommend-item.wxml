@@ -1,0 +1,8 @@
+<view class="recommend-item" bind:tap="recommendItemTapped" data-id="{{item.id}}">
+  <image class="pic" src="{{item.al.picUrl}}" mode="widthFix" />
+  <view class="content">
+    <view class="music-name">{{item.name}}</view>
+    <view class="artist-name">{{item.ar[0].name}} • {{item.al.name}}</view>
+  </view>
+  <van-icon class="right-icon" name="arrow" />
+</view>

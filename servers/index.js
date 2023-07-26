@@ -1,4 +1,7 @@
+export { fetchBanner } from './models/fetchBanner'
 export { fetchVideos } from './models/fetchVideos'
 export { fetchVideoURL } from './models/fetchVideoURL'
+export { fetchPlaylist } from './models/fetchPlaylist'
 export { fetchVideoInfo } from './models/fetchVideoInfo'
+export { fetchRecommend } from './models/fetchRecommend'
 export { fetchRelatedVideos } from './models/fetchRelatedVideos'
